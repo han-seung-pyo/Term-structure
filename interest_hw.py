@@ -92,7 +92,7 @@ for i in np.arange(0,len(df1)):
         t3=p1[2]*((1-np.exp(-df1['tillMat'][i]/p1[3]))/(df1['tillMat'][i]/p1[3])-np.exp(-df1['tillMat'][i]/p1[3]))
         x=(t1+t2+t3)/100
         NS.append(x)
-        NS=pd.DataFrame(NS)
+NS=pd.DataFrame(NS)
 print(NS)
 #plot
 plt.plot(df1['tillMat'],NS, label='NS')
